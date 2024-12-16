@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>from</title>
+    <Style>
+        /* Mobile  */
+        #Mobile:valid{
+            border: 2px solid green;
+            box-shadow: 2px 2px 3px green;
+        }
+        #Mobile:invalid{
+            border: 2px solid red;
+            box-shadow: 2px 2px 3px red;
+        }
+        #Mobile:valid+span{
+            display: none;
+        }
+        #Mobile:invalid+span{
+            display: block;
+            color: red;
+        }
+       
+        /* Age */
+        #Age:in-range{
+            border: 2px solid green;
+            box-shadow: 2px 2px 3px green;
+        }
+        #Age:out-of-range{
+            border: 2px solid red;
+            box-shadow: 2px 2px 3px red;
+        }
+
+        #Age:in-range+span{
+            display: none;
+
+        }
+        #Age:out-of-range+span{
+            display: inline;
+            
+        }
+
+
+    </Style>
+</head>
+<body>
+    <h3>Register User</h3>
+    <!-- Mobile  -->
+    <dl>
+        <dt>Mobile</dt>
+        <dd>
+            <input type="text" id="Mobile" pattern="\+91\d{10}">
+            <span>Invalid Mobile</span>
+        </dd>
+    </dl>
+
+    <!-- Age  -->
+    <dl>
+        <dt>Age</dt>
+        <dd>
+            <input type="number" id="Age" min="15" max="25">
+            <span>Age 15 to 25 only </span>
+        </dd>
+    </dl>
+</body>
+</html>

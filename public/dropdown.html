@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        meter{
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body class="container">
+
+    <!-- <form>
+        <h2>Select a category</h2>
+        <select name="category" size="">
+----------------------------------------------
+             <option value="all">All</option>
+            <option value="ele001">Electronic</option>
+            <option value="foot1001">footwear</option> 
+            <option value="">Select category</option> -->
+            <!-- ------------------------------------------------ -->
+            <!-- <optgroup label="Electronic">
+                <option value="">TV</option>
+                <option value="">Mobile</option>
+            </optgroup>
+            <optgroup label="footwear">
+                <option value="">Casuals</option>
+                <option value="">Sneakers</option>
+            </optgroup>
+        </select>
+        <button>Register</button>
+    </form> --> 
+<fieldset>
+    <legend>Password Strength</legend>
+    <dl>
+        <dt>Strong Password</dt>
+        <dd>
+            <meter min="1" max="100" value="100"></meter>
+        </dd>
+        <dt>Weak Password</dt>
+        <dd>
+            <meter min="1" max="100" value="100" low="20" high="60"></meter>
+        </dd>
+        <dt>Poor Password</dt>
+        <dd>
+            <meter min="1" max="100" value="100" low="60" high="80"></meter>
+        </dd>
+    </dl>
+</fieldset>
+
+
+</body>
+
+</html>

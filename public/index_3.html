@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+ 
+    <title>Layout</title>
+    <style>
+        header{
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+            border: 2px solid black;
+
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid black;
+        }
+        section{
+            height: 600px;
+            display: grid;
+            grid-template-columns: 2fr  8fr 2fr;
+            margin-top: 20px;
+            /* border: 2px solid black; */
+
+        }
+        nav div{
+            border: 2px solid tomato;
+            width: 120px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 20px;
+            background-color: lightsalmon;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+        aside{
+            width: 100px;
+            height: 50px;
+            border: 2px dotted;
+            text-align: center;
+
+        }
+        article{
+            width: 200px;
+            background-color: darkcyan;
+            color: white;
+            padding: 5px;
+            font-size: 25px;
+            margin-left: 300px;
+        }
+        main div{
+            font-size: 40px;
+            text-align: center;
+        }
+        figure{
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Amazon shopping</div>
+    </header>
+    <section>
+        <nav>
+        
+                <div>Home</div>
+                <div>Electronics</div>
+                <div>Footwear</div>
+                <div>Fashion</div>
+
+            
+        </nav>
+        <main>
+            <dialog >Any Help?</dialog>
+            <div>Welcome to online shopping store</div>
+            <figure>
+                Your image
+                <figcaption>Samsung TV</figcaption>
+            </figure>
+            <article>
+                70% off on Electronics
+            </article>
+        </main>
+        <aside>
+            Ads here..
+        </aside>
+
+    </section>
+    <footer>
+        <div>&copy; copyright 2024</div>
+    </footer>
+</body>
+</html>
